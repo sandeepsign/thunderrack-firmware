@@ -255,7 +255,7 @@ static int check_normalized_health(nvme_drive_health_t *drive)
      *
      * SHOULD BE: normalized_value >= threshold
      */
-    if (normalized_value > threshold) {    /* <── LINE 247: BUG - should be >= */
+    if (normalized_value >= threshold) {    /* <── LINE 247: BUG - should be >= */
         return DRIVE_STATUS_HEALTHY;
     }
 
