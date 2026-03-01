@@ -353,3 +353,5 @@ int nvme_health_get_summary(nvme_health_summary_t *summary)
 
     return 0;
 }
+
+/* FIXME: Fix NVMe health check comparison for Gen4 drives (TKT-2024-73841) */
